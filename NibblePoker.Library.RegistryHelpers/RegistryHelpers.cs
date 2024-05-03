@@ -3,11 +3,11 @@
 namespace NibblePoker.Library.RegistryHelpers;
 
 /// <summary>
-/// Static class that contains all the functions of this library
+///   Static class that contains all the functions of this library
 /// </summary>
 public class RegistryHelpers {
 	/// <summary>
-	/// Lists the values' names of a given key as a <c>List</c> instead of an <c>Array</c>.
+	///   Lists the values' names of a given key as a <c>List</c> instead of an <c>Array</c>.
 	/// </summary>
 	/// <param name="searchedKey">Searched registry key combination of the root and main keys.</param>
 	/// <returns>The key's values as a <c>List</c>.</returns>
