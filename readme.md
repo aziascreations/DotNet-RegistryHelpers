@@ -16,3 +16,10 @@ See [building.md](building.md)
 
 ## License
 [MIT License](LICENSE)
+
+
+## License
+[MIT License](https://github.com/aziascreations/DotNet-RegistryHelpers/blob/master/LICENSE)
+
+The [doxygen-awesome-css](https://github.com/jothepro/doxygen-awesome-css) repository is used as a
+submodule for Doxygen and is licensed under the [MIT license](https://github.com/jothepro/doxygen-awesome-css/blob/main/LICENSE).
