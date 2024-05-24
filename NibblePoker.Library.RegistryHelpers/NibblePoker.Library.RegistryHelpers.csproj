@@ -1,35 +1,51 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+    
     <PropertyGroup>
-        <TargetFramework>net6.0-windows</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <TargetFrameworks>net40;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
+
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.0.1</PackageVersion>
+
+        <!-- https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets#packing-a-license-expression-or-a-license-file -->
+        <PackageId>NibblePoker.Library.RegistryHelpers</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <!--<VersionPrefix></VersionPrefix>-->
+        <!--<VersionSuffix></VersionSuffix>-->
+        <Authors>NibblePoker,Herwin Bozet</Authors>
         <Title>NibblePoker Registry Helpers</Title>
         <Description>A small library to help with some task related to the Windows registry.</Description>
+        <!--<Copyright></Copyright>-->
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <!--<PackageLicenseExpression></PackageLicenseExpression>-->
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <!--<PackageLicenseUrl></PackageLicenseUrl>-->
         <PackageProjectUrl>https://github.com/aziascreations/DotNet-RegistryHelpers</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/aziascreations/DotNet-RegistryHelpers/blob/master/LICENSE</PackageLicenseUrl>
         <PackageIcon>icon.png</PackageIcon>
+        <!--<PackageIconUrl></PackageIconUrl>-->
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <PackageTags>registry</PackageTags>
+        <PackageReleaseNotes>Revamped the library for a proper 1.0.0 release, and changed to a public domain license</PackageReleaseNotes>
         <RepositoryUrl>https://github.com/aziascreations/DotNet-RegistryHelpers</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>registry</PackageTags>
-        <PackageReleaseNotes>* Initial Release</PackageReleaseNotes>
-        <AssemblyVersion>0.0.1</AssemblyVersion>
-        <FileVersion>0.0.1</FileVersion>
+        <RepositoryBranch>master</RepositoryBranch>
+        <!--<RepositoryCommit></RepositoryCommit>-->
+        <!--<PackageType></PackageType>-->
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <DebugType>none</DebugType>
-      <DocumentationFile>bin\Release\NibblePoker.Library.RegistryHelpers.xml</DocumentationFile>
+        <DebugType>none</DebugType>
+        <DocumentationFile>bin\Release\NibblePoker.Library.RegistryHelpers.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <None Include="..\icon.png">
-        <Pack>True</Pack>
-        <PackagePath></PackagePath>
-        <Link>icon.png</Link>
-      </None>
+        <None Include="..\icon.png" Pack="true" PackagePath=""/>
+        <None Include="..\LICENSE" Pack="true" PackagePath=""/>
+        <None Include="..\readme.md" Pack="true" PackagePath=""/>
     </ItemGroup>
 
 </Project>

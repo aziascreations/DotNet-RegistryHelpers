@@ -96,3 +96,5 @@ fabric.properties
 NibblePoker.Library.RegistryHelpers.Documentation/Help/
 .idea/
 doxygen.conf
+.vs/
+NibblePoker.Library.RegistryHelpers.Documentation/html/
