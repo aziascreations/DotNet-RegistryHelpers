@@ -1,27 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+
     <PropertyGroup>
-        <TargetFramework>net6.0-windows</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>1.0.0</PackageVersion>
         <Title>NibblePoker Registry Helpers</Title>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Description>A small library to help with some task related to the Windows registry.</Description>
         <PackageProjectUrl>https://github.com/aziascreations/DotNet-RegistryHelpers</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/aziascreations/DotNet-RegistryHelpers/blob/master/LICENSE</PackageLicenseUrl>
-        <PackageIcon>icon.png</PackageIcon>
         <RepositoryUrl>https://github.com/aziascreations/DotNet-RegistryHelpers</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>registry</PackageTags>
-        <PackageReleaseNotes>* Initial Release</PackageReleaseNotes>
-        <AssemblyVersion>0.0.1</AssemblyVersion>
-        <FileVersion>0.0.1</FileVersion>
+        <PackageReleaseNotes>Revamped the library for a proper 1.0.0 release, and changed to a public domain license</PackageReleaseNotes>
+        <PackageIcon>icon.png</PackageIcon>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <TargetFrameworks>net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <DebugType>none</DebugType>
-      <DocumentationFile>bin\Release\NibblePoker.Library.RegistryHelpers.xml</DocumentationFile>
+        <DebugType>none</DebugType>
+        <DocumentationFile>bin\Release\NibblePoker.Library.RegistryHelpers.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DocumentationFile>bin\Debug\NibblePoker.Library.RegistryHelpers.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
